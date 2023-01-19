@@ -1,0 +1,18 @@
+<!-- Create navbar -->
+<header >
+  <nav class="navbar bg-primary">
+    <div class="container-fluid">
+     <div>
+      <i style="font-size: 40px;color:white" class="fas fa-shipping-fast">&nbsp;</i>
+       <strong style="font-size: 30px; color: white;">Atika Store</strong>
+     </div>
+        <form class="d-flex" role="search" style="width: 600px;">
+         <input type="text" class="form-control" [(ngModel)] ="searchTerm" (keyup)="search($event)" placeholder="search products">
+        </form>
+        <button routerLink="cart" class=" btn btn-primary">
+         <i style ="font-size: 30px;" class=" fas fa-cart-plus"></i>
+        <div style="font-size:10px;" class="badge bg-danger">{{totalItem}}</div>
+         </button>
+        </div>
+    </nav>
+</header>
